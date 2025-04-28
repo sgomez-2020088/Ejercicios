@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "3a51447a-0b3e-4536-be2c-291fc15922ca",
+		"name": "EJERCICIOS_JS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37951891"
+	},
+	"item": [
+		{
+			"name": "Temperature",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "value",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "C",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3641/v1/temperature/",
+					"host": [
+						"localhost"
+					],
+					"port": "3641",
+					"path": [
+						"v1",
+						"temperature",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
