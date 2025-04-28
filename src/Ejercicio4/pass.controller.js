@@ -18,6 +18,8 @@ export const createPass = (req, res) => {
         const numB = (numeros === 'true') ? true : false
         const simB = (simbolos === 'true') ? true : false
 
+        if(longitud <= 0) return res.status(400).send({ message: 'La longitud debe ser mayor a 0' })
+
    
         if (mayusculas !== 'true' && mayusculas !== 'false') 
             return res.status(400).send({ message: 'El valor de mayusculas debe ser booleano' })
