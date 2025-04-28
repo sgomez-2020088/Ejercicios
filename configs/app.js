@@ -7,6 +7,7 @@ import cors from 'cors'
 
 
 import passRoutes from '../src/Ejercicio4/pass.routes.js'
+import validacionContraseñaModel from '../src/Ejercicio1/validacionContraseña.routes.js'
 
 
 const configs = (app)=>{
@@ -18,7 +19,7 @@ const configs = (app)=>{
 
 const routes = (app)=>{
     app.use('/v1/randomPass', passRoutes)
-   
+    app.use('/v1/securePassword', validacionContraseñaModel)
 }
 
 export const initServer = async()=> {
