@@ -6,6 +6,9 @@ import cors from 'cors'
 
 
 import passRoutes from '../src/Ejercicio4/pass.routes.js'
+import validacionContraseñaModel from '../src/Ejercicio1/validacionContraseña.routes.js'
+import temperatureRoutes from '../src/ejercicio3/temperature.routes.js'
+import romanRoutes from '../src/Ejercicio2/romano.routhes.js'
 
 
 const configs = (app)=>{
@@ -17,7 +20,10 @@ const configs = (app)=>{
 
 const routes = (app)=>{
     app.use('/v1/randomPass', passRoutes)
-   
+    app.use('/v1/securePassword', validacionContraseñaModel)
+    app.use('/v1/temperature', temperatureRoutes)
+    app.use('/v1/romano', romanRoutes)
+    
 }
 
 export const initServer = async()=> {

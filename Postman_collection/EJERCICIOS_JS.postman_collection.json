@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "5adb1e86-6e67-43c3-830a-943ad79a3a78",
+		"name": "EJERCICIOS_JS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37951882"
+	},
+	"item": [
+		{
+			"name": "Temperature",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "value",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "C",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3641/v1/temperature/",
+					"host": [
+						"localhost"
+					],
+					"port": "3641",
+					"path": [
+						"v1",
+						"temperature",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Romanos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "romano",
+							"value": "MMX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3641/v1/romano/converter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3641",
+					"path": [
+						"v1",
+						"romano",
+						"converter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Contraña segura Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"password\": \"joseArrecis16!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3641/v1/securePassword/validate-password",
+					"host": [
+						"localhost"
+					],
+					"port": "3641",
+					"path": [
+						"v1",
+						"securePassword",
+						"validate-password"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
