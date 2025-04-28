@@ -87,11 +87,11 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3642/v1/securePassword/validate-password",
+					"raw": "localhost:3641/v1/securePassword/validate-password",
 					"host": [
 						"localhost"
 					],
-					"port": "3642",
+					"port": "3641",
 					"path": [
 						"v1",
 						"securePassword",
