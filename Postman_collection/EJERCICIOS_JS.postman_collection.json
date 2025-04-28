@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "5adb1e86-6e67-43c3-830a-943ad79a3a78",
+		"_postman_id": "ccfc9d8c-c722-4d4f-bfb0-8afe9631d5bc",
 		"name": "EJERCICIOS_JS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "37951882"
+		"_exporter_id": "37951897"
 	},
 	"item": [
 		{
@@ -36,6 +36,51 @@
 						"v1",
 						"temperature",
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Random Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "longitud",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "mayusculas",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "numeros",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "simbolos",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3641/v1/randomPass/createPass",
+					"host": [
+						"localhost"
+					],
+					"port": "3641",
+					"path": [
+						"v1",
+						"randomPass",
+						"createPass"
 					]
 				}
 			},
