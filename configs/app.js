@@ -7,7 +7,11 @@ import cors from 'cors'
 
 
 import passRoutes from '../src/Ejercicio4/pass.routes.js'
+<<<<<<< HEAD
 import temperatureRoutes from '../src/ejercicio3/temperature.routes.js'
+=======
+import romanRoutes from '../src/Ejercicio2/romano.routhes.js'
+>>>>>>> f040c698297b301e0702557f330feb8d5a825b6f
 
 
 const configs = (app)=>{
@@ -19,7 +23,11 @@ const configs = (app)=>{
 
 const routes = (app)=>{
     app.use('/v1/randomPass', passRoutes)
+<<<<<<< HEAD
     app.use('/v1/temperature', temperatureRoutes)
+=======
+    app.use('/v1/romano', romanRoutes)
+>>>>>>> f040c698297b301e0702557f330feb8d5a825b6f
    
 }
 
